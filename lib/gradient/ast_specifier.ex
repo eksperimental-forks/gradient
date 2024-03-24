@@ -418,7 +418,7 @@ defmodule Gradient.AstSpecifier do
   end
 
   def mapper(form, tokens, _opts) do
-    Logger.warn("Not found mapper for #{inspect(form)}")
+    Logger.warning("Not found mapper for #{inspect(form)}")
     pass_tokens(form, tokens)
   end
 
